@@ -1,6 +1,5 @@
 package Exercicios01e02;
 
-import java.io.InputStream;
 import java.util.*;
 
 public class Animal {
@@ -9,7 +8,6 @@ public class Animal {
 	private String nome;
 	private int idade;
 	private String acao;
-	private char som;
 	
 	public Animal (String tipo, String nome, int idade, String acao) {
 		
@@ -18,7 +16,6 @@ public class Animal {
 		this.nome = nome;
 		this.idade = idade;
 		this.acao = acao;
-		this.som = som;
 	}
 			
 		public String getNome() {
@@ -48,7 +45,7 @@ public class Animal {
 		return acao;
 	}
 
-	public void setAção(String acao) {
+	public void setAÃ§Ã£o(String acao) {
 		this.acao = acao;
 	}
 	
@@ -60,22 +57,13 @@ public class Animal {
 		this.tipo = tipo;
 	}
 	
-
-	public int getSom() {
-		return som;
-	}
-
-	public void setSom(char som) {
-		this.som = som;
-	}
-
 	public void setAcao(String acao) {
 		this.acao = acao;
 	}
 
 	public void imprimir() {
 		
-		System.out.println("O animal é um(a): "+getTipo()+". O nome do animal é "+getNome()+". Ele tem "+getIdade()+" anos de idade e ele(a) se movimenta "+getAcao());
+		System.out.println("O animal Ã© um(a): "+getTipo()+". O nome do animal Ã© "+getNome()+". Ele tem "+getIdade()+" anos de idade e ele(a) se movimenta "+getAcao());
 	}
 	
 	public void emitirSom() {

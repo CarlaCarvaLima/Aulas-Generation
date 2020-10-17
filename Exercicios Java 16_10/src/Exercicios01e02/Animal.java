@@ -77,7 +77,7 @@ public class Animal {
 	
 	public void pulaLinha() {
 		
-		System.out.println("\n");
+		System.out.println("\n\n");
 	}
 
 }

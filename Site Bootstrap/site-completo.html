@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Bootstrap</title>
+    <!--Link para pegar o estilo CSS do servidor bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--/Link para pegar o estilo CSS do servidor bootstrap-->
+    <!--Style-->
+    <style>
+        .efeitoBotao:hover {
+            transform: scale(1.2);
+        }
+
+        .tm-social {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+    <!--/Style-->
+</head>
+
+<body>
+    <!--Menu-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand text-light" href="site-completo.html">
+        <img src="assets/img/the-longing.ico" width="40" height="40" class="d-inline-block aling-top"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+            aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-light" href="site-completo.html">Home <span class="sr-only">(página atual)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Links
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item"
+                            href="https://www.linkedin.com/in/carla-carvalho-de-lima-65b92bbb/" target="_blank">LinkedIn - Carla Lima</a>
+                        <a class="dropdown-item" href="https://github.com/CarlaCarvaLima" target="_blank">GitHub - Carla Lima</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="https://store.steampowered.com/app/893850/THE_LONGING/" target="_blank">Site do
+                            jogo</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-outline-dark my-2 my-sm-0 text-light" type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </nav>
+    <!--/Menu-->
+
+    <!--Carrossel-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="https://rpg-forge.de/wp-content/uploads/2020/08/the-longing-header.jpg"
+                    alt="Primeiro Slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100"
+                    src="https://images.igdb.com/igdb/image/upload/t_screenshot_huge/qhotqei566vpui8frkz8.jpg"
+                    alt="Segundo Slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://cdn.mos.cms.futurecdn.net/6pPecFoReQV67EcmqekELk.jpg"
+                    alt="Terceiro Slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+    <!--/Carrossel-->
+
+    <!--Jumbotron-->
+    <div class="jumbotron jumbotron-fluid bg-dark">
+        <div class="container">
+            <h1 class="display-4 text-light">The Longing</h1>
+            <p class="lead text-light">Este é um jogo indie que joguei recentemente e que gostei muito! Me fez refletir sobre como vivemos nossas vidas. Como as vezes, para alcançarmos um "bem maior" precisamos sair da nossa zona de conforto e nos jogarmos no desconhecido, sem ter a certeza se estamos seguindo o caminho certo.</p>
+        </div>
+    </div>
+    <!--/Jumbotron-->
+
+    <!--Cards-->
+    <div class="container">
+        <div class="card-columns">
+            <div class="card">
+                <img class="card-img-top" src="https://assets.rockpapershotgun.com/images/2020/03/the-longing.png"
+                    alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">A Sombra</h5>
+                    <p class="card-text">Este é o protagonista do jogo.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top"
+                    src=" https://www.gamingonlinux.com/uploads/articles/article_media/1190865451583400540gol1.jpg"
+                    alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">O Rei</h5>
+                    <p class="card-text">Este é o Rei que criou nosso protagonista para despertá-lo após seu sono de 400
+                        dias.</p>
+                </div>
+            </div>
+            <div class="card text-center">
+                <img class="card-img"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQegqbpHEwE1xBDHkaBRuxw7lcp1s3Od0bd-g&usqp=CAU">
+                <div class="card-body">
+                    <h5 class="card-title">O Menino</h5>
+                    <p class="card-text">" Os olhos de um jovem temem a escuridão".</p>
+                </div>
+            </div>
+            <div class="card text-center">
+                <div class="card-body">
+                    <img class="card-img"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7yFpnMCp-N-MTv1hlIGkVFbNV-7m3oQ74Sw&usqp=CAU">
+                    <h5 class="card-title">Face na pedra</h5>
+                    <p class="card-text">Um rosto misterioso numa parede de pedra. Para a maioria, estranho, mas para a nossa Sombra, alguém para conversar.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img"
+                    src="https://assets.rockpapershotgun.com/images/2020/04/the-longing-final-entry-escape.jpg"
+                    alt="Imagem do card">
+            </div>
+            <div class="card p-3 text-left">
+                <h5 class="card-title">O Homem Velho</h5>
+                <p>"Os olhos de um homem velho e cego não jugarão a escuridão".</p>
+            </div>
+        </div>
+        <!--/Cards-->
+
+        <!--Texto e Vídeo-->
+
+        <div class="row mt-5 mb-5">
+            <div class="col-md-6">
+                <h3 class="mb-5">Descrição do jogo</h3>
+                <p>
+                    The Longing é um jogo independente de aventura estilo "Point and Click", lançado em 5 de março de
+                    2020 pelo Studio Seufz. O jogo segue uma criatura chamada Sombra, que espera 400 dias para acordar
+                    um rei adormecido. Durante essa espera, a Sombra deve encontrar maneiras de passar o tempo. Mas será que seu destino é permanecer nesse mundo subterrâneo e solitário? Ou será que nossa Sombra poderá sonhar com outros mundos...?
+                </p>
+            </div>
+            <div class="col-md-6">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/M67WecraicA" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <!--/Texto e Vídeo-->
+
+        <!--Formulário de contato-->
+        <div class="row mb-5">
+            <div class="col-md-12">
+                <h2 class="text-center">Entre em contato</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Endereço de email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="nome@exemplo.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Seu texto</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="form-group d-flex justify-content-end">
+                        <button class="btn btn-outline-dark bg-dark text-light ">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h4>Em algum lugar, nas profundezas do subterrâneo, vive uma Sombra em uma jornada solitária...</h4>
+                <img width="600" height="400" src="https://i.imgur.com/aqE66si.jpg" alt="mapa the longing">
+            </div>
+        </div>
+
+        <!--/Formulário de contato-->
+
+        <!--Rodapé-->
+        <hr>
+        <footer>
+            <div class="row mb-3">
+                <div class="col-md-12 d-flex justify-content-center">
+                    <a href="https://github.com/CarlaCarvaLima" target="_blank" class="p-3"> <img class="tm-social"
+                            src="assets/img/IconeGithub.png" alt="IconeGithub"></a>
+                    <a href="https://www.linkedin.com/in/carla-carvalho-de-lima-65b92bbb/" target="_blank"
+                        class="p-3"><img class="tm-social" src="assets/img/IconeLinkedin .png" alt="IconeLinkedin"> </a>
+                </div>
+            </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p class="text-center">Todos os direitos reservados: Carla Lima &copy</p>
+        </div>
+    </div>
+
+    </footer>
+    <!--/Rodapé-->
+
+    <!--Scripts necessários para utilização dos códigos JS do Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!--/Scripts necessários para utilização dos códigos JS do Bootstrap-->
+
+</body>
+
+</html>

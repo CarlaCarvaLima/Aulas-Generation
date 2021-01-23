@@ -1,2 +1,2 @@
 # Aulas-Generation
-Contém os exercícios propostos pelo curso da generation
+Contém os exercícios propostos pelo curso da Generation Brasil
